@@ -111,7 +111,6 @@ h2 {
 .container-presentation {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .container-presentation .my-name .presentation {
@@ -119,31 +118,18 @@ h2 {
   margin-bottom: .75rem;
 }
 
-.container-presentation .my-name .name-pink {
+.name-pink {
+  width: 375px;
+  margin-bottom: 1rem;
+}
+
+.name-pink span {
   font-size: 2.6rem;
   color: var(--pink-light);
   font-weight: 700;
-  margin-bottom: 1.25rem;
+  width: 375px;
   white-space: nowrap;
-  border-right: 4px solid;
-  width: 11.5ch;
-  animation: typing 3s steps(14), blink .5s infinite step-end alternate;
-  -webkit-animation: typing 3s steps(14), blink .5s infinite step-end alternate;
-  overflow: hidden;
 }
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
 
 .container-presentation .description {
   width: max-content;
@@ -156,6 +142,11 @@ h2 {
   margin-bottom: 2rem;
   text-align: center;
   width: 300px;
+}
+
+.container-presentation .boton-send-message {
+  justify-self: center;
+  align-self: center;
 }
 
 .container-presentation .boton-send-message a {
@@ -298,14 +289,22 @@ h2 {
   width: 100%;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  gap: 5rem;
 }
 
 .container-recursos h2 {
   margin-bottom: 1.5rem;
   text-align: center;
+}
+
+.recurses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .link-recurses {
@@ -343,6 +342,16 @@ h2 {
 .link-recurses:hover::before {
   transform: translateX(0);
 }
+
+/* .img-recurses {
+  width: 400px;
+}
+
+.img-recurses img {
+  width: 100%;
+  height: 100%;
+} */
+
 
 /*projects*/
 

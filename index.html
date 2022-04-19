@@ -54,7 +54,12 @@
     <div class="container-presentation">
       <section class="my-name">
         <p class="presentation">Hola, me llamo</p>
-        <p class="name-pink">José Benavides</p>
+        <p class="name-pink">
+          <span class="typed"></span>
+        </p>
+        <p id="cadena-texto" class="name-pink">
+          <span class="typed">José Benavides</span>
+        </p>
       </section>
       <section class="description">
         <p>Soy nuevo en el mundo del desarollo web Frontend.</p>
@@ -87,8 +92,14 @@
   </article>
 
   <article class="container-recursos">
-    <h2>Recursos de diseño</h2>
-    <a href="recurses.html" class="link-recurses" target="_blank">Explorar recursos</a>
+    <!-- <div class="img-recurses">
+      <img src="assets/svg/illustrations/undraw_lost_online_re_upmy.svg" alt="">
+    </div> -->
+    <div class="recurses">
+      <h2>Recursos de diseño</h2>
+      <a href="recurses.html" class="link-recurses" target="_blank">Explorar recursos</a>
+    </div>
+
   </article>
 
   <article class="container-projects">
@@ -124,8 +135,10 @@
     <p>Todos los derechos reservados</p>
     <p>José Antonio Benavides Campos</p>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="js/particles.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
