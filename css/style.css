@@ -312,8 +312,30 @@ h2 {
 
 .container-about-me .img-me {
   width: 100vw;
-  height: calc(100vh - 150px);
+  height: 70vh;
+  opacity: 0;
+  transform: translateX(-100px);
+  -webkit-transform: translateX(-100px);
+  -moz-transform: translateX(-100px);
+  -ms-transform: translateX(-100px);
+  -o-transform: translateX(-100px);
+  transition: opacity .5s ease-in-out, transform .6s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out, transform .6s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out, transform .6s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out, transform .6s ease-in-out;
+  -o-transition: opacity .5s ease-in-out, transform .6s ease-in-out;
 }
+
+.container-about-me .img-me.visible {
+  opacity: 1;
+  transform: translateX(100px);
+  -webkit-transform: translateX(100px);
+  -moz-transform: translateX(100px);
+  -ms-transform: translateX(100px);
+  -o-transform: translateX(100px);
+}
+
+
 
 .img-me img {
   width: 100%;
