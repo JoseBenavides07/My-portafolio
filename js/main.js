@@ -16,3 +16,16 @@ const typed = new Typed(".typed", {
     cursorChar: '|',
     contentType: 'html',
 })
+
+const showMenu = document.querySelector(".menu-hidden-container")
+const menuOpacity = document.querySelector(".menu-hidden")
+document.addEventListener("click", e => {
+    if (e.target.matches(".icon-more-recurses img")) {
+        showMenu.classList.add("mostrar-menu")
+        menuOpacity.classList.add("menu-hidden-transition")
+    }
+    if (e.target.matches(".cruz-cierre i")) {
+        showMenu.classList.remove("mostrar-menu")
+        menuOpacity.classList.remove("menu-hidden-transition")
+    }
+})

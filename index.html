@@ -19,18 +19,24 @@
       </div>
     </div>
     <nav class="menu-header">
-      <ul class="menu">
-        <li class="item-menu item-activado"><a href="#">Inicio</a></li>
-        <li class="item-menu"><a href="#">Acerca de mi</a></li>
-        <li class="item-menu"><a href="#">Recursos</a></li>
-        <li class="item-menu"><a href="#">Proyectos</a></li>
-        <li class="item-menu"><a href="#">Habilidades</a></li>
-      </ul>
       <div class="icon-more-recurses">
         <img src="assets/svg/icon-more-recurses.svg" alt="icon">
       </div>
     </nav>
   </header>
+
+  <div class="menu-hidden-container">
+    <ul class="menu-hidden">
+      <li class="item-menu-hidden item-activado"><a href="#home">Inicio</a></li>
+      <li class="item-menu-hidden"><a href="#about-me">Acerca de mi</a></li>
+      <li class="item-menu-hidden"><a href="#recursos">Recursos</a></li>
+      <li class="item-menu-hidden"><a href="#proyectos">Proyectos</a></li>
+      <li class="item-menu-hidden"><a href="#habilidades">Habilidades</a></li>
+    </ul>
+    <div class="cruz-cierre">
+      <i class="fa-solid fa-x"></i>
+    </div>
+  </div>
 
   <aside class="social-media">
     <a href="https://www.facebook.com/Jos%C3%A9-Benavides-100617805950419/?ref=pages_you_manage" class="icons-redes"
@@ -51,7 +57,7 @@
     </a>
   </aside>
 
-  <article class="container-home">
+  <article class="container-home" id="home">
     <div class="container-presentation">
       <section class="my-name">
         <p class="presentation">Hola, me llamo</p>
@@ -74,7 +80,7 @@
     </div>
   </article>
 
-  <article class="container-about-me">
+  <article class="container-about-me" id="about-me">
     <div class="img-me">
       <img src="assets/img/photo-me.jpg" alt="yo">
     </div>
@@ -86,16 +92,14 @@
           commodi? Amet nobis quisquam voluptates reiciendis quas, porro mollitia deserunt animi totam, sit ipsam
           officia
           eum rerum dolorum? Magnam quos sed, tempore vel voluptas at rerum.
+          lorem25
         </p>
         <a href="#">Descargar CV</a>
       </div>
     </div>
   </article>
 
-  <article class="container-recursos">
-    <!-- <div class="img-recurses">
-      <img src="assets/svg/illustrations/undraw_lost_online_re_upmy.svg" alt="">
-    </div> -->
+  <article class="container-recursos" id="recursos">
     <div class="recurses">
       <h2>Recursos de diseño</h2>
       <a href="recurses.html" class="link-recurses" target="_blank">Explorar recursos</a>
@@ -103,14 +107,14 @@
 
   </article>
 
-  <article class="container-projects">
+  <article class="container-projects" id="proyectos">
     <h2>Proyectos</h2>
     <div class="projects">
       <p>Proximamente...</p>
     </div>
   </article>
 
-  <article class="container-habilities">
+  <article class="container-habilities" id="habilidades">
     <h2>Habilidades</h2>
     <div class="habilities">
       <div class="item-habilities html">

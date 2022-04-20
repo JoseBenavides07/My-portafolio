@@ -95,3 +95,35 @@ a {
 .page-absolute {
     text-align: center;
 }
+
+/*aside-recursos*/
+.menu-recursos-list {
+    position: absolute;
+    top: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: var(--blue-dark);
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
+    display: none;
+}
+
+.menu-recursos-list .lista-recursos ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.menu-recursos-list .lista-recursos ul li {
+    padding: 1rem;
+}
+
+.menu-recursos-list .lista-recursos ul li a {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
