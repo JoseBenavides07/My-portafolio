@@ -51,6 +51,7 @@ h2 {
   position: fixed;
   margin-top: -100px;
   background: var(--blue-dark);
+  z-index: 100;
 }
 
 .icon-more-recurses {
@@ -146,19 +147,36 @@ h2 {
 
 .container-presentation .boton-send-message {
   justify-self: center;
-  align-self: center;
+  align-self: flex-start;
 }
 
-.container-presentation .boton-send-message a {
-  padding: 1rem;
-  background: var(--yellow);
-  color: var(--blue-one);
-  font-weight: 600;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+.boton-send-message a {
+  display: inline-block;
+  padding: 12px 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--yellow);
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border-radius: 17px;
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 var(--yellow);
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
+  margin-left: 3rem;
+}
+
+.boton-send-message a:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 var(--yellow);
+}
+
+.boton-send-message a:active {
+  transform: scale(0.9);
 }
 
 .img-home {
@@ -270,19 +288,34 @@ h2 {
   font-weight: 300;
 }
 
-.description-about-me .container-me a {
-  background: var(--yellow);
-  padding: .5rem 1rem;
-  font-size: 1rem;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  width: max-content;
-  font-weight: 500;
-
+.container-me a {
+  display: inline-block;
+  padding: 12px 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--yellow);
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border-radius: 17px;
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 var(--yellow);
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
 }
+
+.container-me a:hover {
+  color: white;
+  box-shadow: inset 0 -100px 0 0 var(--yellow);
+}
+
+.container-me a:active {
+  transform: scale(0.9);
+}
+
 
 /*container-recursos*/
 .container-recursos {
@@ -293,6 +326,7 @@ h2 {
   justify-content: center;
   position: relative;
   gap: 5rem;
+  z-index: 1;
 }
 
 .container-recursos h2 {
@@ -308,6 +342,7 @@ h2 {
 }
 
 .link-recurses {
+  position: relative;
   display: inline-block;
   padding: 0.9rem 1.8rem;
   font-size: 1.5rem;
@@ -342,6 +377,7 @@ h2 {
 .link-recurses:hover::before {
   transform: translateX(0);
 }
+
 
 /* .img-recurses {
   width: 400px;
