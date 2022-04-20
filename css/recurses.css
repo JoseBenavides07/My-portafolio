@@ -1,129 +1,191 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lexend+Deca&family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@100;300;500;700;900&family=Roboto:wght@100;300;400;500;700;900&family=Sansita+Swashed:wght@300&display=swap');
 
 :root {
-    --yellow: #EAAE10;
-    --pink-light: #EF5B5B;
-    --blue-one: #1C2134;
-    --blue-secondary: #181E38;
-    --blue-dark: #0d0f1a;
+  --yellow: #EAAE10;
+  --pink-light: #EF5B5B;
+  --blue-one: #1C2134;
+  --blue-secondary: #181E38;
+  --blue-dark: #0d0f1a;
+  --verde: #20FC8F;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 16px;
-    color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  color: #fff;
 }
 
 body {
-    background: radial-gradient(circle, rgba(24, 30, 56, 1) 0%, rgb(19, 21, 34) 0%);
-
+  background: radial-gradient(circle, rgba(24, 30, 56, 1) 0%, rgb(19, 21, 34) 0%);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "header header"
+    "aside recursos"
+  ;
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
+.header {
+  grid-area: header;
+  width: 100%;
+  height: 100px;
+  background: var(--blue-dark);
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.header h2 {
+  font-size: 2.5rem;
+  color: var(--yellow);
+}
+
+.header h2 i {
+  color: var(--yellow);
+  font-size: 2rem;
+}
+
+
+/*contenido-principal*/
 .container-recursos {
-    width: 95%;
-    padding-left: 5rem;
+  width: 90%;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  grid-area: recursos;
 }
 
-.container-recursos h2 {
-    font-size: 2rem;
-    color: var(--yellow);
-    margin-bottom: 1.5rem;
-}
-
-.container-recursos h2 i {
-    color: var(--yellow);
-    font-size: 2rem;
+.container-item-recursos {
+  padding-bottom: 4rem;
 }
 
 .container-item-recursos h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1.25rem;
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .item-cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .item-card {
-    min-width: 300px;
-    height: 150px;
-    position: relative;
-    background: var(--pink-light);
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+  min-width: 250px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
+/*colores de tarjetas*/
+.paletas .item-card {
+  background: #FBF8CC;
+}
+
+.tipography .item-card {
+  background: #F1C0E8;
+}
+
+.icons .item-card {
+  background: #A3C4F3;
+}
+
+.imagenes .item-card {
+  background: #FFCFD2;
+}
+
+.css-generators .item-card {
+  background: #B9FBC0;
+}
+
+/* ----- */
 .item-card .img-page {
-    width: 150px;
-    height: 130px;
-    margin-left: 10px;
+  width: 150px;
+  height: 130px;
+  margin-left: 10px;
 }
 
 .img-page img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .page-absolute {
-    width: 125px;
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
 }
 
-.page-absolute {
-    text-align: center;
+.page-absolute p {
+  text-align: center;
+  color: #000;
+}
+
+.name-page {
+  font-weight: 900;
 }
 
 /*aside-recursos*/
 .menu-recursos-list {
-    position: absolute;
-    top: 100px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background: var(--blue-dark);
-    height: calc(100vh - 100px);
-    overflow-y: scroll;
-    display: none;
+  position: absolute;
+  top: 100px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: var(--blue-dark);
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+  grid-area: aside;
+  /* display: none; */
+  position: fixed;
+}
+
+.recursos-name h2 {
+  font-size: 2rem;
+  color: #FFF;
 }
 
 .menu-recursos-list .lista-recursos ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
 }
 
 .menu-recursos-list .lista-recursos ul li {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .menu-recursos-list .lista-recursos ul li a {
-    padding: 1rem;
-    font-size: 1.2rem;
-    font-weight: 300;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
