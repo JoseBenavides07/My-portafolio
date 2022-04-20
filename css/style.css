@@ -213,6 +213,17 @@ h2 {
   height: 36px;
 }
 
+.social-media img:hover {
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  filter: drop-shadow(0 0 3px var(--pink-light));
+  -webkit-filter: drop-shadow(0 0 3px var(--pink-light));
+}
+
+
 /*aside-recursos*/
 .menu-recursos-list {
   position: absolute;
