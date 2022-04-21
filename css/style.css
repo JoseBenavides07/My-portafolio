@@ -448,22 +448,15 @@ h2 {
   transform: translateX(-100%);
   transition: all .3s;
   z-index: -1;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
 }
 
 .link-recurses:hover::before {
   transform: translateX(0);
 }
-
-
-/* .img-recurses {
-  width: 400px;
-}
-
-.img-recurses img {
-  width: 100%;
-  height: 100%;
-} */
-
 
 /*projects*/
 
@@ -500,6 +493,7 @@ h2 {
 
 .container-habilities h2 {
   text-align: center;
+  padding-top: 7vh;
 }
 
 .habilities {
