@@ -285,3 +285,19 @@ a {
   filter: drop-shadow(0 0 3px var(--pink-light));
   -webkit-filter: drop-shadow(0 0 3px var(--pink-light));
 }
+
+/*foooter*/
+.container-footer {
+  width: 100%;
+  text-align: center;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-footer p {
+  font-weight: 100;
+}
