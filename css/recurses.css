@@ -301,3 +301,8 @@ a {
 .container-footer p {
   font-weight: 100;
 }
+
+/*arreglo de scroll*/
+.container-recursos div[id] {
+  scroll-margin-top: 100px;
+}

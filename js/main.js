@@ -31,6 +31,7 @@ document.addEventListener("click", e => {
 })
 
 const imgMe = document.querySelector(".img-me")
+const habilities = document.querySelector(".container-habilities")
 
 const cargarImagen = (entradas, observador) => {
     entradas.forEach(entrada => {
